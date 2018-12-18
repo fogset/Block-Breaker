@@ -6,10 +6,12 @@ using UnityEngine;
 public class Ball : MonoBehaviour {
     // config params
     [SerializeField] Paddle paddle1;
-
+    [SerializeField] float xPush = 2f;
+    [SerializeField] float yPush = 15f;
     // state
     Vector2 paddleToBallVector;
-	void Start ()
+    bool hasStarted = false;
+    void Start ()
     {
         paddleToBallVector = transform.position - paddle1.transform.position;
 	}
@@ -17,15 +19,21 @@ public class Ball : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        LockBallToPaddle();
-        LaunchOnMouseClick();
+        if(hasStarted == false)
+        {
+            LockBallToPaddle();
+            LaunchOnMouseClick();
+        }
+        
+       
     }
 
     private void LaunchOnMouseClick()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 15f);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(xPush, yPush);
+            hasStarted = true;
         }
     }
 
