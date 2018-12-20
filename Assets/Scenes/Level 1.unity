@@ -1432,11 +1432,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4984603621958184, guid: 130e24de5d00d174c9a489c8ea3d77d2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 4.99
       objectReference: {fileID: 0}
     - target: {fileID: 4984603621958184, guid: 130e24de5d00d174c9a489c8ea3d77d2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.773
+      value: 0.705
       objectReference: {fileID: 0}
     - target: {fileID: 4984603621958184, guid: 130e24de5d00d174c9a489c8ea3d77d2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1615,21 +1615,6 @@ Prefab:
     - target: {fileID: 1639729665608830, guid: 6da0163f10f95ac48b081c804302b28b, type: 2}
       propertyPath: m_Name
       value: Block (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 212320152918623500, guid: 6da0163f10f95ac48b081c804302b28b,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.29567894
-      objectReference: {fileID: 0}
-    - target: {fileID: 212320152918623500, guid: 6da0163f10f95ac48b081c804302b28b,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 212320152918623500, guid: 6da0163f10f95ac48b081c804302b28b,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.20784311
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da0163f10f95ac48b081c804302b28b, type: 2}
