@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4478343249930180}
   - component: {fileID: 114103610296007618}
+  - component: {fileID: 114891399989871432}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -49,5 +50,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db31379f75058b04d8415a98a0a8b8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakableBlocks: 0
+--- !u!114 &114891399989871432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1529126474609938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90aacd19c3350384cb107ea71582272d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
