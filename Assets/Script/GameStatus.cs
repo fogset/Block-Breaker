@@ -12,9 +12,22 @@ public class GameStatus : MonoBehaviour {
     //state variables
     [SerializeField] int currentScore = 0;
 
+    private void Awake()
+    {
+        int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
+        if(gameStatusCount > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Start()
     {
-        scoreText.text = "0";
+        scoreText.text = currentScore.ToString();
     }
 
     // Update is called once per frame
