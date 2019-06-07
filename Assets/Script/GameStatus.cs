@@ -45,4 +45,5 @@ public class GameStatus : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
 }
